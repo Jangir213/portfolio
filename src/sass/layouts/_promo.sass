@@ -1,0 +1,31 @@
+.promo 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100vh  
+  background-color: $promo-bg
+  background-image: url(../images/intro.svg)
+  background-attachment: fixed
+  background-position: top right
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
+.promo__in
+  @extend %in
+
+.promo__hello
+  font-size: 3.5rem
+  line-height: 4rem
+  font-weight: bold
+  color: #fff
+
+.promo__name
+  font-size: 2rem
+  color: rgba(255,255,255,.75)
+
+.promo__description
+  font-size: 1.75rem
+  margin-bottom: 2rem
+
+.promo__btn
+  @extend %btn
