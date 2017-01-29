@@ -1,0 +1,6 @@
+{
+  "name": "gulp-template",
+  "dependencies": {
+    "HTML5-Reset": "^2.1.3"
+  }
+}
