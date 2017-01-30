@@ -2,7 +2,7 @@
   max-width: 100%;
   padding: 5rem 5rem 3rem; }
 
-.promo__btn, .nav__link {
+.promo__btn, .work__btn, .nav__link {
   cursor: pointer;
   font-size: .6rem;
   letter-spacing: .25em;
@@ -11,7 +11,7 @@
   text-decoration: none;
   padding: .75rem 0; }
 
-.promo__btn {
+.promo__btn, .work__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -24,7 +24,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   overflow: hidden; }
-  .promo__btn:before {
+  .promo__btn:before, .work__btn:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -38,9 +38,9 @@
             transform: scale(0.25);
     -webkit-transition: .2s ease;
     transition: .2s ease; }
-  .promo__btn:hover {
+  .promo__btn:hover, .work__btn:hover {
     border-color: rgba(255, 255, 255, 0.55); }
-    .promo__btn:hover:before {
+    .promo__btn:hover:before, .work__btn:hover:before {
       opacity: .05;
       -webkit-transform: scale(1);
               transform: scale(1); }
@@ -147,3 +147,49 @@ html, body {
 .promo__description {
   font-size: 1.75rem;
   margin-bottom: 2rem; }
+
+.works {
+  background: #5052b5; }
+
+.works__work:nth-child(2) {
+  background: rgba(0, 0, 0, 0.05); }
+
+.works__work:nth-child(3) {
+  background: rgba(0, 0, 0, 0.1); }
+
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 22.5rem; }
+
+.work__img {
+  background-image: url(../images/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 38rem; }
+
+.work__info {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.work__title {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.work__description {
+  margin-bottom: 1rem; }
