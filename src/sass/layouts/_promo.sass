@@ -1,8 +1,12 @@
 .promo 
   display: flex
-  flex-direction: column
+  flex-wrap: wrap
   justify-content: center
+  align-items: flex-end
+  text-align: center
   min-height: 100vh  
+  padding: 3rem
+
   background-color: $promo-bg
   background-image: url(../images/intro.svg)
   background-attachment: fixed
@@ -10,22 +14,19 @@
   background-repeat: no-repeat
   background-size: 100% 100%
 
-.promo__in
-  @extend %in
-
-.promo__hello
-  font-size: 3.5rem
-  line-height: 4rem
-  font-weight: bold
-  color: #fff
+.promo__title
+  width: 100%
 
 .promo__name
-  font-size: 2rem
-  color: rgba(255,255,255,.75)
+  color: #fff
+  text-shadow: 6px 4px 3px rgba(255,255,255,.3)
+  font-size: 3.5rem
+  line-height: 4rem
 
 .promo__description
-  font-size: 1.75rem
-  margin-bottom: 2rem
+  color: #fff
+  text-shadow: 6px 4px 3px rgba(255,255,255,.3)
+  font-size: 2rem
 
 .promo__btn
   @extend %btn

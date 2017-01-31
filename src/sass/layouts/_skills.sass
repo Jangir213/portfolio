@@ -1,0 +1,40 @@
+.skills
+  padding: 3rem
+  background-color: $skills-bg
+  display: flex
+  flex-wrap: wrap
+
+.skills__col
+  width: 33.3333%
+  padding: 1rem
+
+.skills__title
+  font-size: 1.75rem
+  color: #fff
+  display: flex
+  align-items: center
+
+.skills__ico
+  font-size: 2.5rem
+  margin-right: 1rem
+  display: flex
+  align-items: center
+
+.skills__ico--html
+  &:after
+    +icoSkill('\f4e2')
+
+.skills__ico--css
+  &:after
+    +icoSkill('\f4de')
+
+.skills__ico--js
+  &:after
+    +icoSkill('\f4e4')
+
+.skills__logos
+  display: flex
+
+.skills__img
+  width: 20%
+  padding: 2rem
