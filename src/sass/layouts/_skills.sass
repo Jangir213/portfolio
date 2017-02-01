@@ -1,24 +1,8 @@
 .skills
-  padding: 3rem
-  background-color: $skills-bg
-  display: flex
-  flex-wrap: wrap
+  +section($skills-bg)  
 
 .skills__header
-  position: relative
-  display: flex
-  flex-direction: column
-  align-items: center
-  width: 100%
-  font-size: 3rem
-  margin-bottom: 1rem
-  color: #fff
-  &:after
-    content: ''
-    height: 3px
-    width: 100px
-    background-color: #5fd8fb
-
+  @extend %title
 
 .skills__col
   width: 33.3333%
