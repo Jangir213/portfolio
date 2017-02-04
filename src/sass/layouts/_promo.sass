@@ -1,14 +1,12 @@
 .promo 
+  +section($promo-bg)
   position: relative
-  display: flex
-  flex-wrap: wrap
   justify-content: center
   align-items: flex-end
   text-align: center
-  min-height: 100vh  
-  padding: 3rem
+  min-height: 320px  
+  height: 100vh  
 
-  background-color: $promo-bg
   background-image: url(../images/intro.svg)
   background-attachment: fixed
   background-position: top right
@@ -32,6 +30,9 @@
   color: #fff
   text-shadow: 6px 4px 3px rgba(255,255,255,.3)
   font-size: 2rem
+
+.promo__hidden
+  display: none
 
 .promo__btn
   @extend %btn

@@ -12,11 +12,14 @@
   z-index: 100
   +mq($l)
     height: 3.5em
-    // line-height: 3.5em
     overflow: hidden
     padding: 0
     text-align: center
     width: 100%
+    @media screen and (max-height: $xs)
+      display: none
+  +mq($xs)
+    display: none
 
 .nav__inner
   width: 100%

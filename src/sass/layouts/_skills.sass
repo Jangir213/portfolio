@@ -7,6 +7,8 @@
 .skills__col
   width: 33.3333%
   padding: 1rem
+  +mq($s)
+    width: 100%
 
 .skills__title
   font-size: 1.75rem
@@ -34,7 +36,13 @@
 
 .skills__logos
   display: flex
+  flex-wrap: wrap
+  justify-content: center
 
 .skills__img
   width: 20%
   padding: 2rem
+  +mq($s)
+    width: 33.3333%
+  +mq($xs)
+    width: 50%

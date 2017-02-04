@@ -6,15 +6,25 @@
 
 .contact__form
   width: 66.66666%
-
-.contact__info
-  width: 33.33333%
-
-.contact__form
   display: flex
   flex-wrap: wrap
   padding-right: 2rem
   border-right: 1px solid rgba(255, 255, 255, 0.15)
+  +mq($s)
+    width: 100%
+    padding-right: 0
+    padding-bottom: 2rem
+    border-right: none
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+
+.contact__info
+  width: 33.33333%
+  padding-left: 2rem
+  +mq($s)
+    width: 100% 
+    padding-left: 0
+    padding-top: 2rem
+  
 
 .contact__input, .contact__text
   width: 100%
@@ -41,6 +51,8 @@
 .conatct__group
   width: 50%
   padding: .5rem
+  +mq($s)
+    width: 100%
 
 .conatct__group--full
   width: 100%
@@ -48,9 +60,6 @@
 
 .contact__btn
   @extend %btn
-
-.contact__info
-  padding-left: 2rem
 
 .info__group
   padding: .5rem
