@@ -15,3 +15,7 @@
 	flex-wrap: wrap
 	padding: 3rem
 	background-color: $bg
+
+=mq($width, $type: max)
+	@media screen and (#{$type}-width: $width)
+		@content

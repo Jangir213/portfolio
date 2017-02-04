@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Title</title>
 	<!-- build:css css/libs.css -->
 	<link rel="stylesheet" href="libs/HTML5-Reset/assets/css/reset.css">
@@ -19,16 +19,16 @@
 		<div class="nav__inner">
 			<ul class="nav__items">
 				<li class="nav__item">
-					<a href="" class="nav__link active">Welcome</a>
+					<a href="#promo" class="nav__link active">Welcome</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Portfolio</a>
+					<a href="#works" class="nav__link">Portfolio</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Skills</a>
+					<a href="#skills" class="nav__link">Skills</a>
 				</li>
 				<li class="nav__item">
-					<a href="" class="nav__link">Contact</a>
+					<a href="#contact" class="nav__link">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -36,18 +36,20 @@
 
 	<div class="page">
 		<!--promo-->
-		<header class="promo">
+		<header class="promo" id="promo">
 			<!--<div class="promo__in">-->
 			<h1 class="promo__title">
-				<p class="promo__name">Jahangir Hussain</p>
-				<p class="promo__description">Front-end developer</p>
+				<!--<p class="promo__name">Jahangir Hussain</p>-->
+				<!--<p class="promo__description">Front-end developer</p>-->
+				<p class="promo__name"></p>
+				<p class="promo__description"></p>
 			</h1>
-			<a href="" class="promo__btn">My works</a>
+			<a href="#works" class="promo__btn">My works</a>
 			<!--</div>-->
 		</header>
 
 		<!--works-->
-		<section class="works">
+		<section class="works" id="works">
 			<!--1-->
 			<div class="works__work work">
 				<a href="" class="work__img"></a>
@@ -87,25 +89,28 @@
 		</section>
 
 		<!--skills-->
-		<section class="skills">
+		<section class="skills" id="skills">
 			<h2 class="skills__header">My skills</h2>
 
 			<div class="skills__col">
 				<h3 class="skills__title"><i class="skills__ico skills__ico--html"></i>HTML5</h3>
 				<p class="skills__description">
-					HTML is the foundation of a good website. I make use of HTML semantics to improve screen-reader accessibility and SEO. I always make sure my markup is W3C validated.
+					HTML is the foundation of a good website. I make use of HTML semantics to improve screen-reader accessibility and SEO. I
+					always make sure my markup is W3C validated.
 				</p>
 			</div>
 			<div class="skills__col">
 				<h3 class="skills__title"><i class="skills__ico skills__ico--css"></i>CSS3</h3>
 				<p class="skills__description">
-					CSS describes how HTML elements are to be displayed on screen. I use SASS for my CSS. I aim for well-organized non-repetitive stylesheets. 
+					CSS describes how HTML elements are to be displayed on screen. I use SASS for my CSS. I aim for well-organized non-repetitive
+					stylesheets.
 				</p>
 			</div>
 			<div class="skills__col">
 				<h3 class="skills__title"><i class="skills__ico skills__ico--js"></i>JavaScript</h3>
 				<p class="skills__description">
-					JS is a language of many quirks, my knowledge in lower-level languages has helped me comprehend its mechanics. I employ ReactJS and Redux.
+					JS is a language of many quirks, my knowledge in lower-level languages has helped me comprehend its mechanics. I employ ReactJS
+					and Redux.
 				</p>
 			</div>
 			<div class="skills__logos">
@@ -128,7 +133,7 @@
 		</section>
 
 		<!--contact-->
-		<section class="contact">
+		<section class="contact" id="contact">
 			<h2 class="contact__header">
 				Get in touch
 			</h2>
@@ -155,8 +160,7 @@
 				<div class="info__group">
 					<h4 class="info__title">Address</h4>
 					<p class="info__description">
-					 02225 Balzaka Street <br>
-					 Kyiv, Ukraine
+						02225 Balzaka Street <br> Kyiv, Ukraine
 					</p>
 				</div>
 				<div class="info__group">
@@ -171,12 +175,23 @@
 			</div>
 		</section>
 
-<!--footer-->
-<footer class="footer">
-	<span class="footer__rights">© 2017. All rights reserved.</span>
-</footer>
+		<!--footer-->
+		<footer class="footer">
+			<span class="footer__rights">© 2017. All rights reserved.</span>
+		</footer>
 
 	</div>
+
+
+<!--scripts-->
+<!-- build:css css/libs.css -->
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/jquery.scrollex/jquery.scrollex.min.js"></script>
+<script src="libs/particles.js/particles.min.js"></script>
+<script src="libs/typewriter.js/src/typewriter.js"></script>
+<!-- endbuild -->
+<script src="js/main.js"></script>
+
 
 </body>
 

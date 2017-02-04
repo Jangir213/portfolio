@@ -2,7 +2,7 @@
   position: fixed
   top: 0
   left: 0
-  width: 400px
+  width: 18rem
   background: $nav-bg
   padding: 2.5rem
   height: 100vh
@@ -10,6 +10,13 @@
   overflow-y: auto
   text-align: right
   z-index: 100
+  +mq($l)
+    height: 3.5em
+    // line-height: 3.5em
+    overflow: hidden
+    padding: 0
+    text-align: center
+    width: 100%
 
 .nav__inner
   width: 100%
@@ -18,6 +25,14 @@
   flex-direction: column
   justify-content: center
   align-items: stretch
+  +mq($l)
+    align-items: center
+
+.nav__items
+  +mq($l)
+    display: flex
+    align-items: center
+    height: 100%
 
 .nav__item
   position: relative
@@ -28,6 +43,8 @@
     color: #fff
     &:after
       max-width: 100%
+  +mq($l)
+    margin: 0 1rem
 
 .nav__link
   display: block
@@ -41,6 +58,8 @@
     width: 100%
     height: 0.1rem
     border-radius: 0.2rem
+    +mq($l)
+      bottom: -6px
   &:before
     background: #3c2c62
   &:after
