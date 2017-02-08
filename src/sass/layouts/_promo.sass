@@ -14,11 +14,13 @@
   background-size: 100% 100%
   canvas
     position: absolute
+    z-index: 0
     top: 0
     left: 0
 
 .promo__title
   width: 100%
+  z-index: 10
 
 .promo__name
   color: #fff
@@ -30,6 +32,38 @@
   color: #fff
   text-shadow: 6px 4px 3px rgba(255,255,255,.3)
   font-size: 2rem
+  margin-bottom: 1rem
+
+.promo__social
+  text-decoration: none
+  margin: 0 0.25rem
+  &:hover
+    &:before
+      background-color: #fff
+      color: $blue
+  &:before
+    +ico('\f189')
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    background-color: transparent
+    font-size: 1.3rem
+    color: #fff
+    border: 2px solid white
+    width: 2.5rem
+    height: 2.5rem
+    transition: all 0.25s
+
+
+.promo__social--vk
+  &:before
+    +ico('\f189')
+.promo__social--gh
+  &:before
+    +ico('\f09b')
+.promo__social--mail
+  &:before
+    +ico('\f0e0')
 
 .promo__hidden
   display: none
