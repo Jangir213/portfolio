@@ -10,7 +10,7 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var rigger = require('gulp-rigger');
 var rimraf = require('rimraf');
-var image = require('gulp-image');
+var image = require('gulp-imagemin');
 
 //server
 gulp.task('server', function () {
@@ -76,12 +76,19 @@ gulp.task('favicon-build', function () {
 		.pipe(gulp.dest('./build'));
 });
 
+gulp.task('json-build', function () {
+	gulp
+		.src('src/js/*.json')
+		.pipe(gulp.dest('./build/js'));
+});
+
 
 gulp.task('build', [	
 	'html-build',
-	'img-build',
 	'fonts-build',
-	'favicon-build'
+	'favicon-build',
+	'json-build',	
+	'img-build'
 ]);
 
 

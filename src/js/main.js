@@ -5,7 +5,9 @@
     scrollSmooth();
     particlesJS.load('promo', './js/particleconfig.json');
     typewriter.type(function () {
-      typewriter2.type();
+      typewriter2.type(function () {
+        showSocials();
+      });
     });
   });
 
@@ -37,7 +39,7 @@
 
   function scrollSmooth() {
     $('.nav__items').on('click', 'a', click);
-    $('.promo__btn').on('click', click);
+    $('.promo').on('click', 'a', click);
 
     function click(event) {
       var id = $(this).attr('href');
@@ -46,6 +48,12 @@
       event.preventDefault();
       $('body,html').animate({ scrollTop: top }, 1500);
     }
+  }
+
+  function showSocials() {
+    $('.promo__socials').css({
+      'opacity': '1'
+    });
   }
 
   var typewriter = new Typewriter('.promo__name', {
@@ -57,9 +65,6 @@
     text: 'Front-end developer',
     interval: 100
   });
-
-
-
 
 
 })(jQuery);
