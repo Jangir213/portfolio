@@ -82,12 +82,19 @@ gulp.task('json-build', function () {
 		.pipe(gulp.dest('./build/js'));
 });
 
+gulp.task('php-build', function () {
+	gulp
+		.src('src/*.php')
+		.pipe(gulp.dest('./build'));
+});
+
 
 gulp.task('build', [	
 	'html-build',
 	'fonts-build',
 	'favicon-build',
 	'json-build',	
+	'php-build',	
 	'img-build'
 ]);
 

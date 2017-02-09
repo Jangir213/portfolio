@@ -3,6 +3,7 @@
   $(window).on('load', function () {
     navChanged();
     scrollSmooth();
+    sendForm();
     particlesJS.load('promo', './js/particleconfig.json');
     typewriter.type(function () {
       typewriter2.type(function () {
@@ -65,6 +66,21 @@
     text: 'Front-end developer',
     interval: 100
   });
+
+  function sendForm() {
+    $('.contact__form').submit(function () {
+      $.ajax({
+        type: 'POST',
+        url: 'send.php',
+        data: $(this).serialize()
+      }).done(function () {
+        $(this).find('input').val('');
+        alert('I will contact you as soon as possible.');
+        $('.contact__form').trigger('reset');
+      });
+      return false;
+    });
+  }
 
 
 })(jQuery);
